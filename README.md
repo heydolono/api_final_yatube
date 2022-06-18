@@ -1,3 +1,8 @@
+### API YATUBE
+
+Api для сервиса Yatube, позволяет получить список постов, групп, комментариев и их составляющих
+
+
 ### Как запустить проект:
 
 Клонировать репозиторий и перейти в него в командной строке:
@@ -40,4 +45,23 @@ python3 manage.py migrate
 
 ```
 python3 manage.py runserver
+```
+
+
+### Примеры запросов
+
+.../api/v1/posts/ (GET):
+```
+{
+"count": 123,
+"next": "http://api.example.org/accounts/?offset=400&limit=100",
+"previous": "http://api.example.org/accounts/?offset=200&limit=100",
+"results": [
+{}
+]
+}
+```
+
+```
+.../api/v1/posts/ (POST):
 ```
