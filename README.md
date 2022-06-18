@@ -51,6 +51,7 @@ python3 manage.py runserver
 ### Примеры запросов
 
 .../api/v1/posts/ (GET):
+Response:
 ```
 {
 "count": 123,
@@ -62,6 +63,42 @@ python3 manage.py runserver
 }
 ```
 
-```
 .../api/v1/posts/ (POST):
+Request:
+```
+{
+  "text": "string",
+  "image": "string",
+  "group": 0
+}
+```
+
+Response:
+```
+{
+  "id": 0,
+  "author": "string",
+  "text": "string",
+  "pub_date": "2019-08-24T14:15:22Z",
+  "image": "string",
+  "group": 0
+}
+```
+
+.../api/v1/posts/{id}/ (GET):
+Request:
+```
+{
+  "id": 0,
+  "author": "string",
+  "text": "string",
+  "pub_date": "2019-08-24T14:15:22Z",
+  "image": "string",
+  "group": 0
+}
+```
+
+Остальные примеры запросов доступны по эндпоинту:
+```
+.../redoc/
 ```
