@@ -54,11 +54,11 @@ python3 manage.py runserver
 Response:
 ```
 {
-"count": 123,
-"next": "http://api.example.org/accounts/?offset=400&limit=100",
-"previous": "http://api.example.org/accounts/?offset=200&limit=100",
-"results": [
-{}
+  "count": 123,
+  "next": "http://api.example.org/accounts/?offset=400&limit=100",
+  "previous": "http://api.example.org/accounts/?offset=200&limit=100",
+  "results": [
+  {}
 ]
 }
 ```
